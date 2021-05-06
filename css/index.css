@@ -24,71 +24,135 @@ main{
   line-height: 46px;
   font-family: 'FOT-筑紫Aオールド明朝 Pr6N M', '游明朝体', '游明朝', YuMincho, 'ヒラギノ明朝 ProN', 'Hiragino Mincho ProN', 'Noto Serif JP', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
   font-weight: normal;
+  animation-name: road;
+  animation-duration: 30s;
+  animation-iteration-count: 1;
+
 }
 
 .top-images{
   position:relative;
-  width: 550px;
+  width: 555px;
   height: auto;
-  margin-left:170px;
+  margin-left:165px;
 }
 
 .top-image1 img{
-  width: 550px;
+  width: 555px;
   height:auto;
   position: absolute;
   z-index: 50;
+  animation-name: fadeIn;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  opacity: 0;
 }
 
 .top-image2 img{
-  width: 550px;
+  width: 555px;
   height:auto;
   position: absolute;
   z-index: 40;
+  animation-name: fadeIn;
+  animation-delay: 8s;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+
 }
 
 .top-image3 img{
-  width: 550px;
+  width: 555px;
   height:auto;
   position: absolute;
   z-index: 30;
+  animation-name: fadeIn;
+  animation-delay: 16s;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+
 }
 
 .top-image4 img{
-  width: 550px;
+  width: 555px;
   height:auto;
   position: absolute;
   z-index: 20;
+  animation-name: fadeIn; 
+  animation-delay: 24s;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+
 }
 
 .top-image5 img{
-  width: 550px;
+  width: 555px;
   height:auto;
   position: absolute;
   z-index: 10;
+  animation-name: fadeIn;
+  animation-delay: 32s;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+
 }
 
 nav ul{
   margin-top: 410px;
   color: #d5d5d5;
   font-family: 'FOT-筑紫Aオールド明朝 Pr6N M', '游明朝体', '游明朝', YuMincho, 'ヒラギノ明朝 ProN', 'Hiragino Mincho ProN', 'Noto Serif JP', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;;
+  animation-name: road;
+  animation-duration: 30s;
+  animation-iteration-count: 1;
 }
 
 nav li{
-  font-size: 15px;
-  letter-spacing: 4px;
+  font-size: 14.8px;
+  letter-spacing: 3.7px;
   list-style: none;
   margin-bottom: 15px;
+  transition: all 0.3s;
+}
+
+nav li:hover{
+  color:#7d7e7e;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 @keyframes fadeIn{
   0%{
+    opacity: 0;
+  }
+  4%{
     opacity: 1;
   }
-  10%{
+  19%{
     opacity: 1;
   }
-  12.5%{
+  24%{
+    opacity: 0;
+  }
+  100%{
     opacity: 0;
   }
 }
+
+@keyframes road{
+  0%{
+    opacity: 0;
+  }
+  3%{
+    opacity: 0;
+  }
+  6%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
